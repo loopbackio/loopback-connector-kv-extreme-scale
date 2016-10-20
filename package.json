@@ -1,0 +1,30 @@
+{
+  "name": "loopback-connector-kv-extreme-scale",
+  "version": "1.0.0",
+  "description": "The official WebSphere eXtreme Scale KeyValue connector for LoopBack",
+  "main": "lib/kv-extreme-scale.js",
+  "scripts": {
+    "posttest": "eslint . --ignore-path .gitignore"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strongloop/loopback-connector-kv-extreme-scale.git"
+  },
+  "keywords": [
+    "StrongLoop",
+    "LoopBack",
+    "connector",
+    "WebSphere",
+    "eXtreme Scale",
+    "KeyValue"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/strongloop/loopback/issues"
+  },
+  "homepage": "https://github.com/strongloop/loopback-connector-kv-extreme-scale#readme",
+  "devDependencies": {
+    "eslint": "^2.13.1",
+    "eslint-config-loopback": "^4.0.0"
+  }
+}
