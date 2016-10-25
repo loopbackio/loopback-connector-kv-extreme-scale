@@ -4,7 +4,9 @@
   "description": "The official WebSphere eXtreme Scale KeyValue connector for LoopBack",
   "main": "lib/kv-extreme-scale.js",
   "scripts": {
-    "posttest": "eslint . --ignore-path .gitignore"
+    "lint": "eslint .",
+    "test": "mocha test/integration",
+    "posttest": "npm run lint"
   },
   "repository": {
     "type": "git",
@@ -24,7 +26,16 @@
   },
   "homepage": "https://github.com/strongloop/loopback-connector-kv-extreme-scale#readme",
   "devDependencies": {
+    "async-iterators": "^0.2.2",
     "eslint": "^2.13.1",
-    "eslint-config-loopback": "^4.0.0"
+    "eslint-config-loopback": "^4.0.0",
+    "loopback-datasource-juggler": "^3.0.0",
+    "mocha": "^3.1.2",
+    "should": "^8.4.0"
+  },
+  "dependencies": {
+    "debug": "^2.2.0",
+    "loopback-connector": "^2.6.0",
+    "request": "^2.75.0"
   }
 }
