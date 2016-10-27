@@ -6,7 +6,6 @@
 'use strict';
 
 const createDataSource = require('../helpers/data-source-factory');
-const describe = require('../helpers/describe');
 const kvaoTestSuite = require('loopback-datasource-juggler/test/kvao.suite.js');
 
 const connectorCapabilities = {
