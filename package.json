@@ -2,6 +2,9 @@
   "name": "loopback-connector-kv-extreme-scale",
   "version": "1.0.0",
   "description": "The official WebSphere eXtreme Scale KeyValue connector for LoopBack",
+  "engines": {
+    "node": ">=4"
+  },
   "main": "lib/kv-extreme-scale.js",
   "scripts": {
     "lint": "eslint .",
