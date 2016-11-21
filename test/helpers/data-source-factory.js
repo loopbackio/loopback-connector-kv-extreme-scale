@@ -38,6 +38,14 @@ createDataSource.failing = function(options) {
   return createDataSource(settings);
 };
 
+createDataSource.binary = function(options) {
+  const settings = extend({
+    packer: 'binary',
+  }, options);
+
+  return createDataSource(settings);
+};
+
 beforeEach(function clearDatabase(done) {
   this.timeout(10000);
   const ds = createDataSource();
