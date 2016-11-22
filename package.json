@@ -30,6 +30,8 @@
   "homepage": "https://github.com/strongloop/loopback-connector-kv-extreme-scale#readme",
   "devDependencies": {
     "async-iterators": "^0.2.2",
+    "chai": "^3.5.0",
+    "dirty-chai": "^1.2.2",
     "eslint": "^3.10.2",
     "eslint-config-loopback": "^4.0.0",
     "loopback-datasource-juggler": "^3.0.0",
@@ -38,7 +40,7 @@
   },
   "dependencies": {
     "debug": "^2.2.0",
-    "loopback-connector": "^2.6.0",
+    "loopback-connector": "^2.7.0",
     "request": "^2.75.0"
   }
 }
