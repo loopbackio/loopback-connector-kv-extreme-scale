@@ -1,11 +1,16 @@
+// Copyright IBM Corp. 2016. All Rights Reserved.
+// Node module: loopback-connector-kv-extreme-scale
+// This file is licensed under the MIT License.
+// License text available at https://opensource.org/licenses/MIT
+
 'use strict';
 
-var assert = require('assert');
-var connector = require('../..');
-var DataSource = require('loopback-datasource-juggler').DataSource;
-var extend = require('util')._extend;
+const assert = require('assert');
+const connector = require('../..');
+const DataSource = require('loopback-datasource-juggler').DataSource;
+const extend = require('util')._extend;
 
-var SETTINGS = {
+const SETTINGS = {
   url: process.env.EXTREME_SCALE_URL, // TODO add Docker-based default
   strictSSL: false,
   connector: connector,
@@ -18,7 +23,7 @@ function createDataSource(options) {
      'EXTREME_SCALE_URL=https://user:pass@host.example.com:9444' +
      '/wxsdata/v1/grids/testgrid1/testgrid1');
 
-  var settings = extend({}, SETTINGS);
+  let settings = extend({}, SETTINGS);
   settings = extend(settings, options);
   return new DataSource(settings);
 };
@@ -26,7 +31,7 @@ function createDataSource(options) {
 module.exports = createDataSource;
 
 createDataSource.failing = function(options) {
-  var settings = extend({
+  const settings = extend({
     url: 'http://127.0.0.1:10/not-found',
   }, options);
 
@@ -35,8 +40,8 @@ createDataSource.failing = function(options) {
 
 beforeEach(function clearDatabase(done) {
   this.timeout(10000);
-  var ds = createDataSource();
-  var requestOptions = {
+  const ds = createDataSource();
+  const requestOptions = {
     method: 'DELETE',
     uri: '',
   };

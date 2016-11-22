@@ -5,7 +5,7 @@
 
 'use strict';
 
-var createDataSource = require('../helpers/data-source-factory');
+const createDataSource = require('../helpers/data-source-factory');
 
 describeIf(!process.env.CI, 'Juggler API', function() {
   this.timeout(20000);
