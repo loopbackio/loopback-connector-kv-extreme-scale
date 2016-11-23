@@ -16,6 +16,10 @@ const SETTINGS = {
   connector: connector,
 };
 
+if (SETTINGS.url) {
+  console.log('Using EXTREME_SCALE_URL %j', SETTINGS.url);
+}
+
 function createDataSource(options) {
   assert(!!SETTINGS.url,
    'Connector tests require EXTREME_SCALE_URL env variable pointing to ' +

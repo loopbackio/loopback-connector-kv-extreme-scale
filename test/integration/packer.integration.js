@@ -1,7 +1,6 @@
 'use strict';
 
 const createDataSource = require('../helpers/data-source-factory');
-const describe = require('../helpers/describe');
 const expect = require('../helpers/expect');
 const extend = require('util')._extend;
 
