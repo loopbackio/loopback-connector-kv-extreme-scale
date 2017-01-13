@@ -8,7 +8,7 @@
   "main": "lib/kv-extreme-scale.js",
   "scripts": {
     "lint": "eslint .",
-    "test": "mocha test/integration",
+    "test": "mocha test/unit test/integration",
     "posttest": "npm run lint"
   },
   "repository": {

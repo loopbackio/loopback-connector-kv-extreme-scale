@@ -13,7 +13,6 @@ const connectorCapabilities = {
   canQueryTtl: false,
   ttlPrecision: 1000,
   canIterateLargeKeySets: false,
-  supportsFlushOperation: false,
 };
 
 describe('Juggler API', function() {
