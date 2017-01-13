@@ -8,7 +8,7 @@
   "main": "lib/kv-extreme-scale.js",
   "scripts": {
     "lint": "eslint .",
-    "test": "mocha test/integration",
+    "test": "mocha test/unit test/integration",
     "posttest": "npm run lint"
   },
   "repository": {
@@ -41,6 +41,7 @@
   "dependencies": {
     "debug": "^2.2.0",
     "loopback-connector": "^2.7.0",
-    "request": "^2.75.0"
+    "request": "^2.75.0",
+    "strong-globalize": "^2.8.0"
   }
 }
