@@ -2,10 +2,36 @@
 
 The official WebSphere eXtreme Scale KeyValue connector for LoopBack.
 
-## Setting up development environment
+## Usage
 
-The test suite requires an instance of WebSphere eXtreme Scale server.
-Docker is the easiest way for setting it up.
+While it is possible to use this connector as a standalone module, we
+recommended using it in your application via the [LoopBack command-line
+tools](https://loopback.io/doc/en/lb3/Command-line-tools.html).
+
+### Installation and configuration
+
+The command line tool will prompt you to install the connector (if not already
+installed):
+
+```shell
+cd your-loopback-app
+lb datasource
+? Enter the data-source name: xs
+? Select the connector for xs: IBM WebSphere eXtreme Scale key-value connector (supported by StrongLoop)
+Connector-specific configuration:
+? Connection String url to override other settings (eg: https://user:pass@host:port/wxsdata/v1/grids/$GRID_NAME): https://username:password@localhost:9444/wxsdata/v1/grids/your-grid-name
+? Use SSL for connections to the grid: Yes
+? Install loopback-connector-kv-extreme-scale@^1.0.0 (Y/n) Yes
+extreme-scale-lb3x@1.0.0 $HOME/your-project-name
+└── loopback-connector-kv-extreme-scale@1.0.0
+```
+
+## Running tests
+
+The test suite requires a running WebSphere eXtreme Scale server. We recommend
+Docker for the easiest set up experience.
+
+### Setting up development environment
 
 **Important note for Mac users**
 
