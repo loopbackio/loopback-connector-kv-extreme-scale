@@ -2,6 +2,9 @@
 
 The official WebSphere eXtreme Scale KeyValue connector for LoopBack.
 
+- [Usage](https://github.com/strongloop/loopback-connector-kv-extreme-scale#usage)
+- [Running tests](https://github.com/strongloop/loopback-connector-kv-extreme-scale#running-tests)
+
 ## Usage
 
 While it is possible to use this connector as a standalone module, we
