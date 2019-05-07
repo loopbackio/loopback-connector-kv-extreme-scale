@@ -43,5 +43,6 @@
     "loopback-connector": "^4.0.0",
     "request": "^2.75.0",
     "strong-globalize": "^2.8.0"
-  }
+  },
+  "author": "IBM Corp."
 }
