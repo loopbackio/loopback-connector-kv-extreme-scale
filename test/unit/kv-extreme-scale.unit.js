@@ -1,3 +1,8 @@
+// Copyright IBM Corp. 2017. All Rights Reserved.
+// Node module: loopback-connector-kv-extreme-scale
+// This file is licensed under the MIT License.
+// License text available at https://opensource.org/licenses/MIT
+
 'use strict';
 const Connector = require('../../lib/kv-extreme-scale')._Connector;
 const dsFactory = require('../helpers/data-source-factory');
